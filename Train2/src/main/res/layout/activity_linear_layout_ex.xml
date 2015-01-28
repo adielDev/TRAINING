@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                tools:context="com.example.user.training.layout.LinearLayoutEx">
+
+
+    <TextView
+        android:text="suprising!! "
+        android:background="#ff77"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom"/> <!-- this attribute respected only across the width because parent his linearalayout vertical-->
+
+    <TextView
+        android:text="not suprising "
+        android:background="#ff77"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:text="not suprising "
+            android:layout_margin="10dp"
+            android:background="#ff77"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="90dp"
+            android:layout_gravity="right"/>
+        <TextView
+            android:text="not suprising "
+            android:background="#ff77"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="90dp"
+            android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:text=" "
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_gravity="right"/>
+        <TextView
+            android:text="using dummies vies "
+            android:background="#ff77"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_gravity="right"/>
+ <TextView
+            android:text=" "
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+      android:orientation="horizontal"
+  android:weightSum="3"
+  android:layout_gravity="center_horizontal">
+
+  <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text=" not using dummies view (not working..)"
+            android:layout_margin="10dp"
+            android:background="#ff77"/>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="fragments.basefragment.ChangeBetweenFragments"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="one"/>
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="two"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameConFrags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <fragment
+
+        android:id="@+id/fragOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="fragments.basefragment.FragOne"
+        tools:layout="@layout/fragment_frag_one"/>
+      <fragment
+          android:id="@+id/fragTwo"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="fragments.basefragment.FragTwo"
+          tools:layout="@layout/fragment_frag_two"/>
+    </FrameLayout>
+    </LinearLayout>

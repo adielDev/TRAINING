@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TRAINING</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_saving_to_internal_storage">SavingToInternalStorage</string>
+    <string name="title_activity_saving_data_index">SavingDataIndex</string>
+    <string name="title_activity_saving_to_shared_prefrences">SavingToSharedPrefrences</string>
+    <string name="title_activity_index_networking">IndexNetworking</string>
+    <string name="title_activity_simplenetworking">Simplenetworking</string>
+    <string name="title_activity_basic_attributes">BasicAttributes</string>
+    <string name="title_activity_index_layout">IndexLayout</string>
+    <string name="title_activity_linear_layout_ex">LinearLayoutEx</string>
+    <string name="title_activity_relative_layout_ex">RElativeLayoutEx</string>
+    <string name="title_activity_frame_layout_ex">FrameLayoutEx</string>
+    <string name="title_activity_table_layout_ex">TableLayoutEx</string>
+    <string name="title_activity_frame_layout_merge_ex">FRameLayoutMergeEx</string>
+    <string name="title_activity_action_bar_ex">ActionBarEx</string>
+    <string name="title_activity_tabbes_activity_ex">TabbesActivityEx</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_scroll_tabs_ex">ScrollTabsEx</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_index_action_bar">IndexActionBar</string>
+    <string name="title_activity_tabs_navigate_ex">TabsNavigateEx</string>
+    <string name="title_activity_tab_nav_nice_code">TabNavNiceCode</string>
+    <string name="title_activity_tab_nav_from_stack">TabNavFromStack</string>
+
+</resources>

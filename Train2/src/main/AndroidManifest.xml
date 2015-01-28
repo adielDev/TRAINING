@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.training" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivityTaining"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.savingData.SavingToInternalStorage"
+            android:label="@string/title_activity_saving_to_internal_storage" >
+        </activity>
+        <activity
+            android:name="activities.savingData.SavingDataIndex"
+            android:label="@string/title_activity_saving_data_index" >
+        </activity>
+        <activity
+            android:name="activities.savingData.SavingToSharedPrefrences"
+            android:label="@string/title_activity_saving_to_shared_prefrences" >
+        </activity>
+        <activity
+            android:name=".networking.IndexNetworking"
+            android:label="@string/title_activity_index_networking" >
+        </activity>
+        <activity
+            android:name=".networking.Simplenetworking"
+            android:label="@string/title_activity_simplenetworking" >
+        </activity>
+        <activity
+            android:name="fragments.basefragment.SimpleFrag"
+            android:label="title_activity_sinple_frag" >
+        </activity>
+        <activity
+            android:name="fragments.basefragment.IndexFragments"
+            android:label="title_activity_index_fragments" >
+        </activity>
+        <activity
+            android:name="fragments.basefragment.DynamicFrag"
+            android:label="title_activity_dynamic_frag" >
+        </activity>
+        <activity
+            android:name="fragments.basefragment.DynamicFragDetails"
+            android:label="string/title_activity_dynamic_frag_details" >
+        </activity>
+        <activity
+            android:name="fragments.basefragment.ChangeBetweenFragments"
+            android:label="title_activity_change_between_fragments" >
+        </activity>
+        <activity
+            android:name=".layout.BasicAttributes"
+            android:label="@string/title_activity_basic_attributes" >
+        </activity>
+        <activity
+            android:name=".layout.IndexLayout"
+            android:label="@string/title_activity_index_layout" >
+        </activity>
+        <activity
+            android:name=".layout.LinearLayoutEx"
+            android:label="@string/title_activity_linear_layout_ex" >
+        </activity>
+        <activity
+            android:name=".layout.RElativeLayoutEx"
+            android:label="@string/title_activity_relative_layout_ex" >
+        </activity>
+        <activity
+            android:name=".layout.FrameLayoutEx"
+            android:label="@string/title_activity_frame_layout_ex" >
+        </activity>
+        <activity
+            android:name=".layout.TableLayoutEx"
+            android:label="@string/title_activity_table_layout_ex" >
+        </activity>
+        <activity
+            android:name=".layout.FRameLayoutMergeEx"
+            android:label="@string/title_activity_frame_layout_merge_ex" >
+        </activity>
+        <activity
+            android:name=".actionbar.ActionBarEx"
+            android:label="@string/title_activity_action_bar_ex"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".actionbar.TabbesActivityEx"
+            android:label="@string/title_activity_tabbes_activity_ex" >
+        </activity>
+        <activity
+            android:name=".actionbar.ScrollTabsEx"
+            android:label="@string/title_activity_scroll_tabs_ex" >
+        </activity>
+        <activity
+            android:name=".actionbar.IndexActionBar"
+            android:label="@string/title_activity_index_action_bar" >
+        </activity>
+        <activity
+            android:name=".actionbar.TabsNavigateEx"
+            android:label="@string/title_activity_tabs_navigate_ex" >
+        </activity>
+        <activity
+            android:name=".actionbar.TabNavNiceCode"
+            android:label="@string/title_activity_tab_nav_nice_code" >
+        </activity>
+        <activity
+            android:name=".actionbar.tabsNavsFromSample.MainActivityForNav"
+            android:label="main for nav" />
+        <activity
+            android:name=".actionbar.TabNavFromStack"
+            android:label="@string/title_activity_tab_nav_from_stack" >
+        </activity>
+    </application>
+
+</manifest>

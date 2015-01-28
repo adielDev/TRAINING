@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.example.user.training.layout.RElativeLayoutEx">
+    <!-- default position top left-->
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff77"
+        android:id="@+id/textView1"/>
+    <Button
+        android:layout_below="@+id/textView1"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="layout_below att"
+        android:id="@+id/button"
+
+        />
+<Button
+        android:layout_below="@+id/button"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="layout_alignParentRight att"
+        android:id="@+id/button2"
+
+        />
+<Button
+        android:layout_below="@+id/button"
+        android:layout_toLeftOf="@id/button2"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toLeftOf att"
+        android:id="@+id/button3"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="center in "
+        android:id="@+id/center"/>
+<Button
+    android:layout_above="@+id/center"
+    android:layout_alignLeft="@+id/center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="10sp"
+        android:text="alignleft "/>
+
+<Button
+    android:layout_toRightOf="@+id/center"
+    android:layout_alignBottom="@+id/center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="10sp"
+        android:text="alignleft "/>
+    <Button
+    android:layout_toLeftOf="@+id/center"
+    android:layout_width="wrap_content"
+    android:layout_alignBaseline="@+id/center"
+    android:layout_height="wrap_content"
+    android:textSize="10sp"
+        android:text="baseline "/>
+
+    <Button
+        android:layout_below="@+id/center"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invisible1"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        android:text="ia am invisible 1"/>
+    <Button
+        android:layout_toLeftOf="@+id/invisible1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center"
+        android:layout_margin="10dp"
+        android:text="to my right there is invisible view"/>
+
+ <Button
+
+     android:layout_below="@+id/invisible1"
+     android:layout_alignParentRight="true"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:id="@+id/invisible2"
+        android:text="ia am invisible 2"/>
+    <Button
+        android:layout_below="@+id/invisible1"
+        android:layout_toLeftOf="@+id/invisible2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="to my riht there is gone view"
+        android:id="@+id/nearGone"/>
+
+<Button
+    android:layout_below="@+id/nearGone"
+    android:layout_alignParentRight="true"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:id="@+id/invisible3"
+        android:text="ia am invisible 3"/>
+    <Button
+        android:layout_below="@+id/nearGone"
+        android:layout_toLeftOf="@+id/invisible3"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="to my right there is gone view"/>
+
+
+
+
+
+</RelativeLayout>

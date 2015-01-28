@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.user.training.actionbar.ActionBarEx">
+
+
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          app:showAsAction="never"
+      />
+
+    <item android:id="@+id/option1"
+          android:title="set logo"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom|withText"
+          android:icon="@drawable/ic_action_accept"/>
+
+  <item android:id="@+id/option2"
+          android:title="option2"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom|withText"
+          android:icon="@drawable/ic_action_call"/>
+
+  <item android:id="@+id/option3"
+          android:title="option3"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom|withText"
+          android:icon="@drawable/ic_action_cancel"/>
+
+<item android:id="@+id/option4"
+          android:title="option3"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom|withText"
+          android:icon="@drawable/ic_action_cancel"/>
+
+
+</menu>
